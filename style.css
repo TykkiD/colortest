@@ -1,0 +1,136 @@
+body {
+  box-sizing: border-box;
+  background: #e1f4fe;
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  font-size: 50px;
+  margin: 0;
+  color: #004264;
+  text-transform: uppercase;
+}
+#game-container p {
+  color: #51ccf6;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+#game-container {
+  background: #fff;
+  box-shadow: 4px 4px #b8dbed;
+  height: 427px;
+  padding: 12px 20px 20px 25px;
+  width: 490px;
+  border-radius: 5px;
+  position: relative;
+  margin: 70px auto;
+}
+#timer {
+  background: #fff;
+  border: 5px solid #51ccf6;
+  border-radius: 50%;
+  font-size: 50px;
+  font-weight: bold;
+  height: 90px;
+  width: 90px;
+  line-height: 90px;
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  text-align: center;
+  color: #b2d52b;
+}
+#timer.hurry {
+  border: 5px solid #ef3d4e;
+}
+#hurry-seconds {
+  font-size: 25px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+#game {
+  margin-top: 10px;
+  max-width: 320px;
+  width: 100%;
+  height: 320px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+.color-block {
+  background: lightseagreen;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#score {
+  width: 133px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 55px;
+}
+.level,
+.mistakes {
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+  font-size: 28px;
+  border-radius: 5px;
+  margin: 5px 0 10px;
+}
+.level {
+  background: #51ccf6;
+}
+.mistakes {
+  background: #ef3d4e;
+}
+
+#popup-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.results-popup {
+  max-width: 950px;
+  width: 100%;
+  min-height: 400px;
+  background: #fff;
+  border: 5px solid #4accf8;
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px #777;
+  position: relative;
+}
+.results {
+  border-bottom: 2px dashed #cecbc0;
+  color: #004162;
+  font-size: 20px;
+  font-weight: bold;
+}
+.results ul {
+  display: flex;
+  list-style: none;
+}
+.results ul li {
+  margin-right: 30px;
+}
+.playagain {
+  background-image: url("play-again.png");
+  background-repeat: no-repeat;
+  height: 109px;
+  width: 124px;
+  position: absolute;
+  top: -42px;
+  right: -23px;
+  cursor: pointer;
+}
